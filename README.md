@@ -52,4 +52,19 @@ pandas — data manipulation
 numpy — helper tools
 
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
+# Changing Year 
+
+You can change the year variable to any other dates, and it will parse the data for the specified year.
+
+year = 2021
+
+url = f"https://www.formula1.com/en/results/{year}/races"
+
+resp = requests.get(url)
+
+soup = BeautifulSoup(resp.text, "html.parser")
+
+
 
